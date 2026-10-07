@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#12050d">
+  <title>For My Love ♡</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- PASSWORD SCREEN -->
+  <section id="lockScreen" class="lock-screen">
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+
+    <div class="lock-card">
+      <div class="tiny-heart">♡</div>
+      <p class="eyebrow">A LITTLE SECRET FOR YOU</p>
+      <h1>Only You Can<br><span>Unlock This</span></h1>
+      <p class="lock-text">There is a little surprise waiting behind this door.</p>
+
+      <div class="password-wrap">
+        <input id="passwordInput" type="password" inputmode="numeric" maxlength="4" placeholder="• • • •" autocomplete="off">
+        <button id="unlockBtn">UNLOCK <span>♡</span></button>
+      </div>
+
+      <p id="errorMessage" class="error-message">That's not the secret… try again ♡</p>
+      <p class="hint">Hint: the day that belongs only to you.</p>
+    </div>
+
+    <div class="bottom-signature">made with love, just for you</div>
+  </section>
+
+  <!-- MAIN EXPERIENCE -->
+  <main id="mainSite" class="main-site">
+    <div id="heartField" class="heart-field"></div>
+    <div class="grain"></div>
+
+    <section class="hero">
+      <div class="hero-glow"></div>
+      <p class="eyebrow reveal">TODAY IS ALL ABOUT YOU</p>
+      <h2 class="hero-title reveal">Happy Birthday,<br><span>My Love</span></h2>
+      <p class="hero-subtitle reveal">To the girl who makes ordinary days feel extraordinary.</p>
+      <div class="scroll-cue reveal">
+        <span>SCROLL TO YOUR SURPRISE</span>
+        <i></i>
+      </div>
+    </section>
+
+    <section class="memories section">
+      <div class="section-heading">
+        <p class="eyebrow">OUR LITTLE WORLD</p>
+        <h3>Moments I Want<br><em>to keep forever.</em></h3>
+      </div>
+
+      <div class="flip-grid">
+        <article class="flip-card" tabindex="0">
+          <div class="flip-inner">
+            <div class="flip-face flip-front">
+              <img src="media/photo1.jpg" alt="Our memory 1">
+              <div class="photo-overlay">
+                <span>01</span>
+                <b>TURN ME</b>
+              </div>
+            </div>
+            <div class="flip-face flip-back">
+              <span class="back-number">01</span>
+              <p>Some memories become special simply because they have you in them.</p>
+              <span class="back-heart">♡</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="flip-card" tabindex="0">
+          <div class="flip-inner">
+            <div class="flip-face flip-front">
+              <img src="media/photo2.jpg" alt="Our memory 2">
+              <div class="photo-overlay">
+                <span>02</span>
+                <b>TURN ME</b>
+              </div>
+            </div>
+            <div class="flip-face flip-back">
+              <span class="back-number">02</span>
+              <p>If I could keep one feeling forever, it would be the feeling of having you beside me.</p>
+              <span class="back-heart">♡</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="videos section">
+      <div class="section-heading">
+        <p class="eyebrow">PRESS PLAY</p>
+        <h3>Two little pieces<br><em>of us.</em></h3>
+      </div>
+
+      <div class="video-grid">
+        <div class="video-card">
+          <video controls playsinline preload="metadata" poster="media/video1-poster.jpg">
+            <source src="media/video1.mp4" type="video/mp4">
+          </video>
+          <div class="video-caption"><span>MEMORY I</span><b>♡</b></div>
+        </div>
+
+        <div class="video-card">
+          <video controls playsinline preload="metadata" poster="media/video2-poster.jpg">
+            <source src="media/video2.mp4" type="video/mp4">
+          </video>
+          <div class="video-caption"><span>MEMORY II</span><b>♡</b></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="letter-section section">
+      <div class="letter-intro">
+        <p class="eyebrow">ONE LAST THING</p>
+        <h3>I wrote something<br><em>just for you.</em></h3>
+        <p>Don't just look at it… open it.</p>
+      </div>
+
+      <button id="letterBtn" class="envelope" aria-label="Open love letter">
+        <div class="envelope-shadow"></div>
+        <div class="envelope-body"></div>
+        <div class="envelope-flap"></div>
+        <div class="letter-paper">
+          <span>For My Love</span>
+          <strong>♡</strong>
+        </div>
+        <div class="seal">♡</div>
+      </button>
+
+      <p class="tap-note">TAP THE LETTER</p>
+    </section>
+
+    <section id="finalMessage" class="final-message">
+      <div class="message-glow"></div>
+      <div class="message-card">
+        <button id="closeLetter" class="close-letter" aria-label="Close">×</button>
+        <p class="eyebrow">MY LETTER TO YOU</p>
+        <h3>Happy Birthday,<br><em>My Beautiful Girl.</em></h3>
+
+        <div class="message-copy">
+          <p>Happy birthday to the person who somehow makes my world softer, warmer, and infinitely more beautiful just by being in it.</p>
+          <p>I don't know what the future will look like, but I know one thing: I want to keep collecting moments with you, laughing with you, annoying you, supporting you, and loving you through every chapter.</p>
+          <p>You deserve every beautiful thing this life can give you. And on your birthday, I just want you to know how incredibly special you are to me.</p>
+          <p class="last-line">I love you. More than this little website could ever explain. ♡</p>
+        </div>
+
+        <div class="signature">Forever yours,<br><span>♡</span></div>
+      </div>
+    </section>
+
+    <footer>
+      <span>MADE WITH LOVE</span>
+      <b>♡</b>
+      <span>JUST FOR YOU</span>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
